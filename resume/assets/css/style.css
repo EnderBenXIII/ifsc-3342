@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ------ Typography -------*/
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* ------ Fluid Images -------*/
+  
+  
+  /* ------ Utility Classes  -------*/
+  
+  
+  /* ------ Helper Classes -------*/
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
+  
+  /* ------ Global Styles -------*/
+  
+  
