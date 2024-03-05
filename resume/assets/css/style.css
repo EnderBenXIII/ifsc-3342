@@ -274,3 +274,57 @@ main{
     "skills"
     ;
 }
+
+i{
+  margin-right: 5px;
+}
+
+/*-----------------------Media Queries-------------------------------------*/
+
+@media screen and (min-width:768px) {
+
+  .container{
+    width: 680px;
+  }
+
+  main.container{
+    grid-template-columns: 36.5% auto;
+    grid-template-areas: 
+    "title title"
+    "pronouns pronouns"
+    "about about"
+    "skills experience"
+    ". education";
+    padding-bottom: 10px;
+  }
+
+  #about{
+    display: grid;
+    grid-template-columns: 250px 1fr auto;
+    gap: 2em;
+    grid-template-areas: 
+    "bio details details"
+    "related related related";
+  }
+
+  .bio{
+    grid-area: bio;
+  }
+  .details{
+    grid-area: details;
+  }
+  .related-links{
+    grid-area: related;
+    border-bottom: 1px solid var(--accent-color-1);
+    padding-bottom: 50px;
+  }
+
+  dl{
+    grid-template: repeat(8, auto) / 8em 1fr;
+  }
+  
+dd{
+  padding-bottom: 0;
+}
+
+}
