@@ -31,7 +31,7 @@ img {
 
 /* ------ Utility Classes  -------*/
 .container {
-  width: 680px; /* Design Time */
+  max-width: 680px; /* Design Time */
   margin: 0 auto;
   background: var(--secondary-bg-color);
 }
