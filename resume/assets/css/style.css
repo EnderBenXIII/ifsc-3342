@@ -274,6 +274,9 @@ main.container > * {
 #skills {
   order: 4;
 }
+.exp {
+  order: 6;
+}
 #experience {
   order: 3;
 }
@@ -282,8 +285,6 @@ main.container > * {
 }
 
 /*-----------------------Media Queries-------------------------------------*/
-
-/*----------------------Media Queries-----------------------*/
 
 @media only screen and (min-width: 768px) {
   
@@ -317,16 +318,74 @@ main.container > * {
     padding-left: 40px;
   }
   .related-links {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid var(--accent-color-1);
     padding-bottom: 50px;
     flex: 1;
   }
 }
 
+@media screen and (min-width:992px) {
+  main.container {
+    max-width: 1440px;
+  }
+  header.container {
+    max-width: 1440px;
+  }
+  .page-title {
+  }
+  #skills {
+    padding-left: 5px;
+    border-bottom: 1px solid var(--accent-color-1);
+    padding-bottom: 10px;
+  }
+  #experience {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    flex: 1 70%;
+    border-right: 1px solid var(--accent-color-1);
+  }
+  #education {
+    padding-left: 10px;
+    flex: 1 30%;
+  }
+  #about {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .exp {
+    display: flex;
+    padding: 5px;
+  }
+
+  .bio {
+    flex: 1 30%;
+  }
+  .details {
+    flex: 1 70%;
+    padding-left: 40px;
+  }
+  .related-links {
+    border-bottom: 1px solid var(--accent-color-1);
+    padding-bottom: 50px;
+    flex: 1;
+  }
+
+}
+
 /*----------------------Edge Case Tweaks-----------------------*/
 
-@media only screen and (max-width: 435px) {
-  .related-links li a svg {
-    display: none;
-  }
+@media only screen and (max-width: 460px) {
+  .related-links li a svg{display:none;}
+  
+}
+
+@media only screen and (max-width: 395px) {
+.related-links{
+flex-direction:column;
+
+}
+.related-links a{
+display:block;
+  }  
 }
